@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+.body {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leftSection {
+  width: 66.66vw;
+  height: 100vh;
+  background-color: #fff;
+  padding-left: 5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.greeting {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.welcome {
+  font-size: 3rem;
+  opacity: 0.8;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+.description {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.skip {
+  width: 8rem;
+  height: 3rem;
+  font-size: large;
+  font-weight: bold;
+  color: #8e8d9c;
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.skip:hover {
+  background-color: #d8d8da;
+}
+.continue {
+  width: 8rem;
+  height: 3rem;
+  font-size: large;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1805c9;
+  border: none;
+  border-radius: 5px;
+}
+.continue:hover {
+  background-color: #170a8a;
+}
+.demo {
+  opacity: 0.5;
+  margin-top: 2rem;
+}
+.redirect {
+  color: #000;
+  font-weight: bold;
+}
+.redirect:hover {
+  color: #1900ff;
+}
+.rightSection {
+  width: 33.34vw;
+  height: 100vh;
+  background-color: #faf9f5;
+  display: flex;
+  flex-direction: column;
+}
+.click {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  font-size: 1.75vw;
+  width: 25ch;
+  text-align: center;
+}
+.design {
+  position: relative;
+  top: 40vh;
+  /* background-color: #170a8a; */
+  /* mix-blend-mode: luminosity; */
+}
+.oval {
+  width: 22vw;
+  height: 25vh;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(240, 209, 185, 0.2);
+}
+.one {
+  left: 3vw;
+}
+.two {
+  right: 3vw;
+}
+.ovalContent {
+  position: absolute;
+  top: 7vh;
+  left: 8vw;
+  width: 20ch;
+  font-size: 1.35vw;
+  text-align: center;
+}
+.help {
+  width: 9rem;
+  height: 3rem;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  color: #fff;
+  background-color: #1805c9;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+.help:hover {
+  background-color: #170a8a;
 }
